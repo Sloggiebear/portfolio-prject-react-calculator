@@ -11,15 +11,56 @@ body {
 
 body {
   height: 100%;
-  background: linear-gradient(45deg, #9910a3, #ce8012);
-  display: flex;
+  background: linear-gradient(45deg, #e06ee9, #047a8d);
   margin: auto;
   align-items: center;
   justify-content: center;
 }
 
+nav {
+  display: flex;
+  align-items: center;
+  background-color: rgba(48, 48, 48, 0.692);
+  width: 100%;
+  color: #cacaca;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+nav .back {
+  display: flex;
+  align-items: center;
+  width: content;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 10px;
+  margin-right: 25px;
+}
+
+nav .back svg {
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+}
+
+nav .back:hover {
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .app-grid {
   display: grid;
+  gap: 6px;
   margin-top: 3rem;
   grid-template-columns: repeat(4, 6rem);
   grid-template-rows: minmax(7rem, auto) repeat(5, 6rem);
@@ -31,18 +72,24 @@ body {
 
 .output-window {
   grid-column: 1/-1;
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: rgba(0, 0, 0, 0.2);
   padding: 1rem;
   color: white;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   justify-content: space-around;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.274);
+}
+
+.output-window:hover {
+  background-color: rgba(0, 0, 0, 0.35);
 }
 
 .output-window .previous-operation {
-  font-size: 1rem;
-  color: rgba(155, 155, 155, 0.863);
+  font-size: 1.2rem;
+  color: rgba(184, 184, 184, 0.863);
 }
 
 .output-window .current-operation {
@@ -53,7 +100,8 @@ body {
 button {
   font-size: 1.5rem;
   color: #ffffff;
-  border: 1px solid rgba(54, 54, 54, 0.9);
+  border: none;
+  border-radius: 55px;
   background-color: rgba(54, 54, 54, 0.61);
   cursor: pointer;
 }
@@ -61,4 +109,20 @@ button {
 button:hover, button:focus {
   background-color: rgba(54, 54, 54, 0.9);
   border: 0px;
+}
+
+.bg-purple {
+  background-color: #5e0b6475;
+}
+
+.bg-purple:hover {
+  background-color: #3a073d88;
+}
+
+.bg-blue {
+  background-color: #047b8db4;
+}
+
+.bg-blue:hover {
+  background-color: #03535fb4;
 }
