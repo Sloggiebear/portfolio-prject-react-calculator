@@ -15,7 +15,7 @@ export default function navigation() {
 </g>
 </svg>
 Back to Projects</a>
-        <div><p>Calculator built with React with custom CSS and deployed on Firebase. Thanks to <a href="https://courses.webdevsimplified.com/" target="_blank" rel="noopener">Kyle</a> </p></div>
+        <div>Calculator built with React with custom CSS and deployed on Firebase. Thanks to <a href="https://courses.webdevsimplified.com/" target="_blank" rel="noopener">Kyle</a></div>
     </nav>
     )
 }
